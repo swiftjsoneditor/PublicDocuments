@@ -39,9 +39,9 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
 
 Basic script pre-defines 3 main scripting functions. Swift JSON Editor will execute available functions in this order:
 
-1. sjeRecursiveNode function is is implemented.
-2. sjeTreeNode function 
-3. sjeTreeNodeExport function
+1. **sjeRecursiveNode** function is is implemented.
+2. **sjeTreeNode** function 
+3. **sjeTreeNodeExport** function
 
 Comment sjeTreeNode if you want to execute sjeRecursiveNode function and vice versa. 
 
@@ -52,3 +52,10 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
     
 }
 ```
+
+Tree node function provides a way for your script to traverse complete JSON structure. 
+
+| Parameter | Class | Description |
+|-|-|-|
+| rootJsonNode | JavascriptJsonNode class | root tree node of your project model |
+| selectedJsonNodes | Array of JavascriptJsonNode class objects  | root tree node of your project model |
