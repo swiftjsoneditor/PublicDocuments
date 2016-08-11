@@ -141,10 +141,13 @@ var sjeTreeNodeExport = function () {
 ```javascript
 // Return Array of SJEFile class objects
 var sjeTreeNodeExport = function () {
+	
 	var file = SJEFile.newFile();
+	
    	file.fileName = "BookClass";
    	file.fileExtension = "swift";
    	file.contentString = myGeneratedSwiftClassString;
+   	
   	return [file];
 }
 ```
