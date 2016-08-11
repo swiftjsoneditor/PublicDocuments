@@ -12,4 +12,4 @@ JavascriptProjectNode class represents scripting class for Swift JSON Editor pro
 | **parent** | JavascriptProjectNode | get | parent node |
 | **children** | Array of JavascriptProjectNode objects | get | Object,Array,SmartObject or SmartArray nodes can contain child nodes.|
 | **index** | Number | get | Current index of node within its parent node | 
-| **rootJsonNode** | JavascriptJsonNode | get | the root json node associated with project node |
+| **rootJsonNode** | [JavascriptJsonNode](SwiftJSONEditor.JavascriptJsonNode.md) | get | the root json node associated with project node |
