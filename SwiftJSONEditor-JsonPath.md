@@ -1,4 +1,4 @@
-# Swift JSON Editor JSON PATH
+# Swift JSON Editor JSONPath
 
 ![JsonPath](http://api.artproweb.com/sje/documentation/jsonPath.png "Json Path")
 
