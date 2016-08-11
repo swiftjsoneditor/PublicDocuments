@@ -12,6 +12,8 @@ Use scripting to:
 - Gather information & export to external text files
 - Extract structures & create new project nodes with selected data
 
+JSON structure is simple Tree structure, however when represented in Swift JSON Editor, JSON objects are translated to JavascriptJsonNode class objects. JavascriptJsonNode scripting class offers several methods and functionality and is represented in regular tree structure with parent / children relationship. **Inside scripting functions JavascriptJsonNode class is used insted of JSON javascript.**
+
 ## Tree Scripting functions
 
 Default script:
@@ -79,7 +81,41 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
       	published.value = false
 	}
 }
+```
 
 Example script filter rootJsonNode using jsonPath function (implemented in JavascriptJsonNode class) and appends new Boolean element into Book object with key "isPublished" and value "false"
+
+## Recursive Node Function
+
+```javascript
+ var sjeRecursiveNode = function (node) {
+ 
+ }
+```
+
+Recursive node function is executed on every single Json node in your current structure. Use this function for "search & replace" or similar functionality as this function will execute with every single Json node. Traversing starts from root to all children deep.
+
+| Parameter | Class | Description |
+|---|----|----|
+| node | **JavascriptJsonNode** class | json node  |
+
+
+### Example:
+
+```javascript
+var sjeRecursiveNode = function (node) {
+ 
+   	var value = node.value;
+  
+   	if (value.search("http://") != -1) {
+   		node.value = value.replace("http://","https://");
+	}
+}
+```
+
+Example script will search everywhere for "http://" string and replace it with "https://"
+
+> sjeRecursiveNode will be executed multiple times, passing every json node in current tree.
+
 
 
