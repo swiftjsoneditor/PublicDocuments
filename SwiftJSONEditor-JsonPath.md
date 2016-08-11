@@ -5,7 +5,8 @@
 Swift JSON Editor implements custom JSONPath syntax to traverse JSON nodes in application and user scripting.
 
 The current syntax has been modified from [http://goessner.net/articles/JsonPath/](http://goessner.net/articles/JsonPath/) implementation porting it to Apple Swift and modified to support more application relevant functionality such **input/output javascript scripted server** within application (Will come in next application update).
-> Scripted Server project node will allows to create HTTP Rest server withing Swift JSON Editor and exchange JSON stuctures to/from your development application. You will be able to send data to Swift JSON Editor and receive responses via HTTP Rest server.
+
+> Scripted Server project node will allow to create HTTP Rest server in Swift JSON Editor and exchange JSON stuctures to/from your development application. You will be able to send data to Swift JSON Editor and receive responses via HTTP Rest server.
 
 JSON PATH can be used to extract structures from JSON tree wihout manually traversing the tree structure.
 
