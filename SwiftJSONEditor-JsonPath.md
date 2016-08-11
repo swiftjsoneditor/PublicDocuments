@@ -68,7 +68,19 @@ Filtering array has been extended with additional functionality.
 
 
 
-| Comparators        | Example           | Description  | Result |
+| Comparators        | Example           | Description  |
 | ------------- |-------------| -----|-----|
-| ==     | $.store.book[@.price == 12.99] | is equal to value | returns book object with price that equals to 12.99 |
+| == | $.store.book[(@.price == 12.99)], $.store.book[(@.category == 'fiction')]  | numeric or string value is equal to value |
+| = | $.store.book[(@.price == 12.99)], $.store.book[(@.category == 'fiction')]  | numeric or string value is not equal to value |
+| < | $.store.book[(@.price < 12.99)]  | numeric value is less than |
+| <= | $.store.book[(@.price <= 12.99)]  | numeric value is less or equal than |
+| > | $.store.book[(@.price > 12.99)]  | numeric value is greater than |
+| >= | $.store.book[(@.price >= 12.99)]  | numeric value is greater or equal than |
+| between | $.store.book[(@.price between 5.6:15.0)]  | numeric value is between min:max value |
+| contains | $.store.book[(@.author contains 'Evelyn')]  | string value contains string |
+| regex | $.store.book[?(@.author regex '[a-zA-Z]')]  | string value is matching regex pattern, (experimental) |
+
+
+
+
 
