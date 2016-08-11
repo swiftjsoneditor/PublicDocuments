@@ -10,12 +10,12 @@ The current syntax has been modified from [http://goessner.net/articles/JsonPath
 
 JSON PATH can be used to extract structures from JSON tree wihout manually traversing the tree structure.
 
-## Main Characteristics
+## Characteristics
 
 - JSONPath expressions can use the dot–notation, **$.store.book[0].title** or or the bracket–notation **$['store']['book'][0]['title']**
 - bracket-notation is requiered where path JSON key contains blank spaces such **$.store.book[0].['json path key with spaces']**
 
-## Implementation syntax
+## Syntax
 
 ```javascript
 { "store": {
@@ -51,6 +51,8 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 }
 ```
 
+### Path Syntax
+
 | Syntax        | Example           | Description  | Result |
 | ------------- |-------------| -----|-----|
 | $     | $ | Reffers root element, must be included in all json path queries. | Will return root JSON Element, the whole tree |
@@ -71,6 +73,7 @@ Filtering array has been extended with additional functionality.
 **[(@.price < 10)]** transfers to [(@.objectKey comparator value)]
 
 
+### Comparators (Array Filter Condition)
 
 | Comparators        | Example           | Description  |
 | ------------- |-------------| -----|-----|
