@@ -36,4 +36,5 @@ JavascriptJsonNode class representes single tree JSON entity in application.
 
 
 (*b) appending new nodes is only allowed in container nodes (Object,Array), SmartNodes are not supported.
+(*c) deleting smart nodes is not allowed.
 
