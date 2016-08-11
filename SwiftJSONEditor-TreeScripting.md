@@ -1,7 +1,7 @@
 
 # Swift JSON Editor Tree Scripting
 
-Swift JSON Editor incorporates a simple Javascript scripting to modify / edit document project json trees. Every project model contains a single script that can be executed to modify the project node main json tree.
+Swift JSON Editor incorporates a simple Javascript scripting to modify / edit document project and json trees. Every project model contains a single script that can be executed to modify the project node json tree.
 
 Use scripting to:
 
@@ -12,9 +12,9 @@ Use scripting to:
 - Gather information & export to external text files
 - Extract structures & create new project nodes with selected data
 
-JSON structure is simple Tree structure, however when represented in Swift JSON Editor, JSON objects are translated to JavascriptJsonNode class objects. JavascriptJsonNode scripting class offers several methods and functionality and is represented in regular tree structure with parent / children relationship. **Inside scripting functions JavascriptJsonNode class is used insted of JSON javascript.**
+JSON structure is simple tree structure, however when represented in Swift JSON Editor, JSON objects are translated to JavascriptJsonNode class objects. JavascriptJsonNode scripting class offers several methods and functionality and is represented in regular tree structure with parent / children relationship. **Inside scripting functions JavascriptJsonNode class is used insted of javascript JSON representation.**
 
-### Scripting Classes
+### All Scripting Classes
 
 | Name | Represents | Description |
 |----|----|----|
@@ -36,15 +36,15 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
 }
 
 /*
- var sjeRecursiveNode = function (node) {
+var sjeRecursiveNode = function (node) {
  
- }
+}
 */
 
 /*
- var sjeTreeNodeExport = function () {
- return NULL;
- }
+var sjeTreeNodeExport = function () {
+return NULL;
+}
 */
 
 ```
