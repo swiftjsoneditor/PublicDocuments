@@ -17,6 +17,7 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 
 ## Syntax
 
+
 ```javascript
 { "store": {
     "book": [ 
@@ -53,6 +54,7 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 
 ### Path Syntax
 
+
 | Syntax        | Example           | Description  | Result |
 | ------------- |-------------| -----|-----|
 | $     | $ | Reffers root element, must be included in all json path queries. | Will return root JSON Element, the whole tree |
@@ -66,7 +68,6 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 | [^] | $.store.book[^] | distinct items | JSONPath will traverse the array, compare and return every object that has different key structure than differ from the most common object key structure in array.|
 |[(@.price < 10)] | $.store.book[@.price<10] | filter condition in array | return all objects in array with price element lower than 10 |
 
-## Array filter conditions extensions
 
 Filtering array has been extended with additional functionality.
 
@@ -74,6 +75,7 @@ Filtering array has been extended with additional functionality.
 
 
 ### Comparators (Array Filter Condition)
+
 
 | Comparators        | Example           | Description  |
 | ------------- |-------------| -----|-----|
