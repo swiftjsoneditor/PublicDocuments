@@ -7,9 +7,11 @@ SJEFile class representes file export identity for Swift JSON Editor. During scr
 var sjeTreeNodeExport = function () {
 	
   var file = SJEFile.newFile();
+  
   file.fileName = "Exported";
   file.fileExtension = "txt";
   file.contentString = fileString;
+  
   return [file];
 }
 
@@ -21,4 +23,11 @@ var sjeTreeNodeExport = function () {
 | **fileName** | String | get / set | file name on disk |
 | **fileExtension** | String |  get / set | file extension on disk such "txt", "swift", etc |
 | **contentString** | String | get / set | content string that will be written to disk |
+
+## Functions
+| Function | Parameters | Returns | Description |
+| --- | --- | --- | --- |
+| **class function newFile() | none | newly created SJEFile object | creates new file object |
+
+> Remember !!! sjeTreeNodeExport function must return Array of SJEFile objects...
 
