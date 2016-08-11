@@ -70,7 +70,7 @@ sjeTreeNode function provides you a way to enumerate or filter using jsonPath no
 var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
    
   	// Get all books
-  	var allBooks = rootJsonNode.jsonPath("$store.book[*]");
+  	var allBooks = rootJsonNode.jsonPath("$.store.book[*]");
   
     for (var i = 0; i < allBooks.length; i++) {
   		// Get book JavascriptJsonNode classes
