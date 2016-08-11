@@ -59,7 +59,7 @@ Comment sjeTreeNode if you want to execute sjeRecursiveNode function and vice ve
 
 
 
-## Tree Node Function
+# Tree Node Function
 
 ```javascript
 var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
@@ -99,7 +99,7 @@ Example script filter rootJsonNode using jsonPath function (implemented in Javas
 
 
 
-## Recursive Node Function
+# Recursive Node Function
 
 ```javascript
  var sjeRecursiveNode = function (node) {
@@ -133,7 +133,7 @@ Example script will search everywhere for "http://" string and replace it with "
 
 
 
-## File Export Function
+# File Export Function
 
 It is possible to gather information using tree or recursive functions and export gathered data to a file. Use sjeTreeNodeExport function to export information to disk. You can implement your own (Swift class file generators, JSON to XML ) etc.
 
