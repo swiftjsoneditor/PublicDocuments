@@ -31,7 +31,6 @@ JavascriptJsonNode class representes single tree JSON entity in application.
 | select() | none | none | upon operation finishes, node will be selected in UI |
 | debugInfo() | none | key + value formatted string | prints basic information about node |
 
-
 (*b) appending new nodes is only allowed in container nodes (Object,Array), SmartNodes are not supported.
 (*c) deleting smart nodes is not allowed.
 
