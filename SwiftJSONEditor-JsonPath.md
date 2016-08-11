@@ -59,7 +59,7 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 | ------------- |-------------| -----|-----|
 | **$**     | $ | Reffers root element, must be included in all json path queries. | Will return root JSON Element, the whole tree |
 | **.**      | $.store , $.['store']      |   . path, use . to dive into subtrees | will return store object |
-| ***** | $store.books[*]      | all elements in array | Will return all objects in books array |
+| **<p>*</p>** | $store.books[*]      | all elements in array | Will return all objects in books array |
 | **[2]** | $store.books[2] | array element index | will return 3rd object from books array, remember indexings starts from 0 element in arrays |
 | **[(@.length-1)]** | $store.books[(@length-1) ] | index condition, @length reffers to count of objects in array | will return last object in books array |
 | **[0:3]** | $store.books[0:3] | sequence [startIndex:endIndex] | will return 4 objects in sequence from books array starting at 0 to 3 index (total of 4 objects) |
