@@ -58,6 +58,17 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 | [0:10:2] | $.store.book[0:4:2] | sequence with step [startIndex:endIndex:step] | will return every second objects from books array from sequence starting at 0 ending at 4 index (will return objects with indexes 0 and 2) |
 | [?] | $.store.book[?] | randomly selected object in array | will return any single randomly selected object from books array |
 | [^] | $.store.book[^] | distinct items | JSONPath will traverse the array, compare and return every object that has different key structure than differ from the most common object key structure in array.|
-|[@.price<10] | array filter condition | return all objects in array with price element lower than 10 | Filter condition |
+|[@.price<10] | $.store.book[@.price<10] | filter condition in array | return all objects in array with price element lower than 10 |
 
+## Array filter conditions extensions
+
+Filtering array has been extended with additional functionality.
+
+**[@.price < 10]** transfers to [@.objectKey comparator value]
+
+
+
+| Syntax        | Example           | Description  | Result |
+| ------------- |-------------| -----|-----|
+| $     | $ | Reffers root element, must be included in all json path queries. | Will return root JSON Element, the whole tree |
 
