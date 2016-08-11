@@ -32,9 +32,9 @@ JavascriptJsonNode class representes single tree JSON entity in application.
 | debugInfo() | none | key + value formatted string | prints basic information about node |
 
 
-
-
-
 (*b) appending new nodes is only allowed in container nodes (Object,Array), SmartNodes are not supported.
 (*c) deleting smart nodes is not allowed.
 
+##Smart Nodes
+
+Smart nodes offers most efficiency in user interface editing therefore editing is only supported via user interface. Smart Nodes were created to quickly edit and create JSON structures in interface.
