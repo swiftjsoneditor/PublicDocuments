@@ -56,6 +56,6 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
 Tree node function provides a way for your script to traverse complete JSON structure. 
 
 | Parameter | Class | Description |
-|-|-|-|
+|---|----|----|
 | rootJsonNode | JavascriptJsonNode class | root tree node of your project model |
 | selectedJsonNodes | Array of JavascriptJsonNode class objects  | root tree node of your project model |
