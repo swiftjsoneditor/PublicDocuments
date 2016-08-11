@@ -1,5 +1,7 @@
 # Swift JSON Editor JSON PATH
 
+![JsonPath](http://api.artproweb.com/sje/documentation/jsonPath.png "Json Path")
+
 Swift JSON Editor implements custom JSONPath syntax to traverse JSON nodes in application and user scripting. This document will explain the current JSONPath syntax that is suported in Swift JSON Editor application.
 
 The current syntax has been modified from [http://goessner.net/articles/JsonPath/](http://goessner.net/articles/JsonPath/) implemntation porting to Apple Swift and modified to support more relevant options for future **Scripted Server** project nodes and implementation of input/output javascript scripted server within application (Will come in next application update).
@@ -80,7 +82,7 @@ Filtering array has been extended with additional functionality.
 | contains | $.store.book[(@.author contains 'Evelyn')]  | string value contains string |
 | regex | $.store.book[?(@.author regex '[a-zA-Z]')]  | string value is matching regex pattern, (experimental) |
 
-
+* Remember that comparator values for string elements must contains ' ' wrap, where numeric do not.
 
 
 
