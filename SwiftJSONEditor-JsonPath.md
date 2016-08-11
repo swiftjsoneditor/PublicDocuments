@@ -71,7 +71,7 @@ Filtering array has been extended with additional functionality.
 | Comparators        | Example           | Description  |
 | ------------- |-------------| -----|-----|
 | =, == | $.store.book[(@.price = 12.99)], $.store.book[(@.category == 'fiction')]  | numeric or string value is equal to value |
-| !=, !== | $.store.book[(@.price != 12.99)], $.store.book[(@.category == 'fiction')]  | numeric or string value is not equal to value |
+| !=, !== | $.store.book[(@.price != 12.99)], $.store.book[(@.category !== 'fiction')]  | numeric or string value is not equal to value |
 | < | $.store.book[(@.price < 12.99)]  | numeric value is less than |
 | <= | $.store.book[(@.price <= 12.99)]  | numeric value is less or equal than |
 | > | $.store.book[(@.price > 12.99)]  | numeric value is greater than |
