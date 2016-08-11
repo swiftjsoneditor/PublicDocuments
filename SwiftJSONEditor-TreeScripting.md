@@ -14,6 +14,14 @@ Use scripting to:
 
 JSON structure is simple Tree structure, however when represented in Swift JSON Editor, JSON objects are translated to JavascriptJsonNode class objects. JavascriptJsonNode scripting class offers several methods and functionality and is represented in regular tree structure with parent / children relationship. **Inside scripting functions JavascriptJsonNode class is used insted of JSON javascript.**
 
+Classes
+| Name | Represents | Description |
+|---|----|----|
+| JavascriptJsonNode | Json Node tree structure in current editor | allows modification of json nodes |
+| JavascriptProjectNode | Project node in project structure | allows modification of project nodes |
+| JavascriptContextController | global Swift JSON Editor application context | exists as global sje object in scripts, calls functions available to process in application |
+
+
 ## Tree Scripting functions
 
 Default script:
