@@ -51,11 +51,13 @@ return NULL;
 
 Basic script pre-defines 3 main scripting functions. **Swift JSON Editor will execute available functions in this order:**
 
-1. **sjeRecursiveNode** function is is implemented.
+1. **sjeRecursiveNode** function if is implemented.
 2. **sjeTreeNode** function 
 3. **sjeTreeNodeExport** function
 
 Comment sjeTreeNode if you want to execute sjeRecursiveNode function and vice versa. 
+
+
 
 ## Tree Node Function
 
@@ -95,6 +97,8 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
 
 Example script filter rootJsonNode using jsonPath function (implemented in JavascriptJsonNode class) and appends new Boolean element into Book object with key "isPublished" and value "false"
 
+
+
 ## Recursive Node Function
 
 ```javascript
@@ -126,6 +130,8 @@ var sjeRecursiveNode = function (node) {
 Example script will search everywhere for "http://" string and replace it with "https://"
 
 > sjeRecursiveNode will be executed multiple times, passing every json node in current tree.
+
+
 
 ## File Export Function
 
