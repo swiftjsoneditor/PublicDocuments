@@ -12,9 +12,9 @@ JavascriptJsonNode class representes single tree JSON entity in application.
 | **parent** | JavascriptJsonNode | get | parent node |
 | **children** | Array of JavascriptJsonNode objects | get | Object,Array,SmartObject or SmartArray nodes can contain child nodes.|
 | **index** | Number | get | Current index of node within its parent node | 
-| **enabled** | Number | get / set | 1 if node is enabled, 0 if is disabled |
-| **isSmartNode** | Number | get | 1 if node is SmartObject or SmartArray else 0 |
-| **isContainer** | Number | get | 1 if node is Object, SmartObject, Array, SmartArray else 0 |
+| **enabled** | Number | get / set | true if node is enabled, false if is disabled |
+| **isSmartNode** | Boolean | get | true if node is SmartObject or SmartArray else false |
+| **isContainer** | Boolean | get | true if node is Object, SmartObject, Array, SmartArray else false |
 
 (*a) key and structure modifications are disabled in Smart nodes. (cannot append, delete or modify key structure of smart objects)
 
