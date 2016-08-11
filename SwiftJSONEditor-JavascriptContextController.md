@@ -1,4 +1,4 @@
-# JavascriptContextController class (sje)
+# JavascriptContextController Class (sje)
 
 JavascriptContextController class represents a global application context. Context let you use Swift JSON Editor application internal helper functions to 
 
