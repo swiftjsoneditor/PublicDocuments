@@ -20,7 +20,7 @@ JavascriptJsonNode class representes single tree JSON entity in application.
 ## Functions
 | Function | Parameters | Returns | Description |
 | --- | --- | --- | --- |
-| jsonPath("jsonPathString") | String (JSONPath string)[String (JSONPath string)](SwiftJSONEditor-JsonPath.md) | Array of JavascriptJsonNode class objects | Use to filter and return nodes using JSONPath querries |
+| jsonPath("jsonPathString") | [String (JSONPath string)](SwiftJSONEditor-JsonPath.md) | Array of JavascriptJsonNode class objects | Use to filter and return nodes using JSONPath querries |
 | appendObject() | none | newly created JavascriptJsonNode class object | appends new Object node (*b) |
 | appendArray() | none | newly created JavascriptJsonNode class object | appends new Array node (*b) |
 | appendString() | none | newly created JavascriptJsonNode class object | appends new String node (*b) |
