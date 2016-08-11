@@ -1,4 +1,4 @@
-# JavascriptJsonNode class
+# JavascriptJsonNode Class
 
 JavascriptJsonNode class representes single tree JSON entity in application. 
 
