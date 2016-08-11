@@ -80,4 +80,6 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
 	}
 }
 
+Example script filter rootJsonNode using jsonPath function (implemented in JavascriptJsonNode class) and appends new Boolean element into Book object with key "isPublished" and value "false"
+
 
