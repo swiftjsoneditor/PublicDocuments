@@ -21,4 +21,19 @@ JavascriptJsonNode class representes single tree JSON entity in application.
 | Function | Parameters | Returns | Description |
 | --- | --- | --- | --- |
 | jsonPath("jsonPathString") | String (JSONPath string) | Array of JavascriptJsonNode class objects | Use to filter and return nodes using JSONPath querries |
+| appendObject() | none | newly created JavascriptJsonNode class object | appends new Object node (*b) |
+| appendArray() | none | newly created JavascriptJsonNode class object | appends new Array node (*b) |
+| appendString() | none | newly created JavascriptJsonNode class object | appends new String node (*b) |
+| appendNumber() | none | newly created JavascriptJsonNode class object | appends new Number node (*b) |
+| appendBoolean() | none | newly created JavascriptJsonNode class object | appends new Boolean node (*b) |
+| appendNull() | none | newly created JavascriptJsonNode class object | appends new Null node (*b) |
+| delete() | none | none | deletes node (*c)|
+| select() | none | none | upon operation finishes, node will be selected in UI |
+| debugInfo() | none | key + value formatted string | prints basic information about node |
+
+
+
+
+
+(*b) appending new nodes is only allowed in container nodes (Object,Array), SmartNodes are not supported.
 
