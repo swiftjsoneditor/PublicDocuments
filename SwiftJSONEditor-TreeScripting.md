@@ -126,5 +126,31 @@ Example script will search everywhere for "http://" string and replace it with "
 
 > sjeRecursiveNode will be executed multiple times, passing every json node in current tree.
 
+## File Export Function
+
+It is possible to gather information using tree or recursive functions and export gathered data to a file. Use sjeTreeNodeExport function to export information to disk. You can implement your own (Swift class file generators, JSON to XML ) etc.
+
+```javascript
+var sjeTreeNodeExport = function () {
+
+}
+```
+
+*Example*
+```javascript
+// Return Array of SJEFile class objects
+var sjeTreeNodeExport = function () {
+	var file = SJEFile.newFile();
+   	file.fileName = "BookClass";
+   	file.fileExtension = "swift";
+   	file.contentString = myGeneratedSwiftClassString;
+  	return [file];
+}
+```
+
+| Parameter | Class | Description |
+|---|----|----|
+| none | none | Create new SJEFile class object, set fileName,fileExtension and contentString object |
+Return : Array of [SJEFile] objects
 
 
