@@ -15,4 +15,4 @@ JavascriptJsonNode class representes single tree JSON entity in application.
 | isSmartNode | Number | get | 1 if node is SmartObject or SmartArray else 0 |
 | isContainer | Number | get | 1 if node is Object, SmartObject, Array, SmartArray else 0 |
 
-*a Smart Nodes are not supported to modigy (Key, Append child nodes)
+(*a) key and structure modifications are disabled in Smart nodes. (cannot append, delete or modify key structure of smart objects)
