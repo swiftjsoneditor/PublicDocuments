@@ -1,10 +1,10 @@
 # JavascriptContextController Class (sje)
 
-JavascriptContextController class represents a global application context. Context let you use Swift JSON Editor application internal helper functions to 
+JavascriptContextController class represents a global application context accessed as "sje". Context let you use Swift JSON Editor application internal helper functions to 
 
 - Retrive Project Nodes
 - Insert new Project Nodes
-- Use helper functions for encoding etc.
+- Use helper functions for encoding, logging etc.
 
 ## Functions
 | Function | Parameters | Returns | Description |
