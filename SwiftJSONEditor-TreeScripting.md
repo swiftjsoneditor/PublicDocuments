@@ -78,7 +78,7 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
   		// Append String Json Node into book Object
       	var published = book.appendBoolean();
       	published.key = "isPublished";
-      	published.value = false
+      	published.value = false;
 	}
 }
 ```
