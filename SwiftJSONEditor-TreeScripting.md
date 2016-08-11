@@ -49,7 +49,7 @@ return NULL;
 
 ```
 
-Basic script pre-defines 3 main scripting functions. Swift JSON Editor will execute available functions in this order:
+Basic script pre-defines 3 main scripting functions. **Swift JSON Editor will execute available functions in this order:**
 
 1. **sjeRecursiveNode** function is is implemented.
 2. **sjeTreeNode** function 
