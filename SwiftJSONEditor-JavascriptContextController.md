@@ -24,7 +24,7 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
     for (var i = 0; i < filtered.length; i++) {
   		var item = filtered[i];
   		// Use JavascriptContextController via sje global object
-      sje.log(item);
+      	sje.log(item);
 	}
 }
 
