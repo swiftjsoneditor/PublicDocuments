@@ -10,7 +10,6 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 
 - JSONPath expressions can use the dot–notation, **$.store.book[0].title** or or the bracket–notation **$['store']['book'][0]['title']**
 - bracket-notation is requiered where path JSON key contains blank spaces such **$.store.book[0].['json path key with spaces']**
-- 
 
 ## Implementation syntax
 
@@ -51,6 +50,10 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 | Syntax        | Example           | Description  | Result |
 | ------------- |-------------| -----|-----|
 | $     | $ | Reffers root element, must be included in all json path queries. | Will return root JSON Element, the whole tree |
-| .      | $.store      |   . reffers to path, use . to dive into subtrees | Will return store object |
+| .      | $.store      |   . reffers to path, use . to dive into subtrees | will return store object |
 | * | $store.books[*]      |    reffers to all elements in array | Will return all objects in books array |
+| [2] | $store.books[2] | reffers to array element index | will return 3rd object from books array, remember indexings starts from 0 element in arrays |
+| [(@.length-1)] | $store.books[(@length-1) ] | index condition, @length reffers to count of objects in array | will return last object in books array |
+| [0:3] | $store.books[0:3] | reffers to sequence [startIndex:endIndex] | will return 4 objects in sequence from books array starting at first element 0 and with last elemt of index 3 (total 4 objects) |
+
 
