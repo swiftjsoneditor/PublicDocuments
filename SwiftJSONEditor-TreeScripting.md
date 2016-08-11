@@ -21,6 +21,7 @@ JSON structure is simple Tree structure, however when represented in Swift JSON 
 | [JavascriptJsonNode](SwiftJSONEditor-JavascriptJsonNode.md) | Json Node tree object in current editor | allows modification of json nodes |
 | JavascriptProjectNode | Project node in project structure | allows modification of project nodes |
 | JavascriptContextController | global Swift JSON Editor application context | exists as global "sje" object in scripts, calls functions available to process in host application |
+| SJEFile | Export file | Define export file and Swift JSON Editor will save your defined files to disk |
 
 
 ## Tree Scripting functions
