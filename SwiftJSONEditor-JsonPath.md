@@ -54,6 +54,9 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 | * | $store.books[*]      |    reffers to all elements in array | Will return all objects in books array |
 | [2] | $store.books[2] | reffers to array element index | will return 3rd object from books array, remember indexings starts from 0 element in arrays |
 | [(@.length-1)] | $store.books[(@length-1) ] | index condition, @length reffers to count of objects in array | will return last object in books array |
-| [0:3] | $store.books[0:3] | reffers to sequence [startIndex:endIndex] | will return 4 objects in sequence from books array starting at first element 0 and with last elemt of index 3 (total 4 objects) |
+| [0:3] | $store.books[0:3] | reffers to sequence [startIndex:endIndex] | will return 4 objects in sequence from books array starting at 0 to 3 index (total of 4 objects) |
+| [0:10:2] | $.store.book[0:4:2] | reffers to [startIndex:endIndex:step] | will return every second objects from books array from sequence starting at 0 ending at 4 index (will return objects with indexes 0 and 2) |
+| [?] | $.store.book[?] | randomly selected object in array | will return any single randomly selected object from books array |
+
 
 
