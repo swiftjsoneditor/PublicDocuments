@@ -57,5 +57,27 @@ Tree node function provides a way for your script to traverse complete JSON stru
 
 | Parameter | Class | Description |
 |---|----|----|
-| rootJsonNode | JavascriptJsonNode class | root tree node of your project model |
-| selectedJsonNodes | Array of JavascriptJsonNode class objects  | root tree node of your project model |
+| rootJsonNode | **JavascriptJsonNode** class | root tree node of your project model |
+| selectedJsonNodes | **Array** of **JavascriptJsonNode** class objects  | currently selected JSON nodes in UI |
+
+sjeTreeNode function provides you a way to enumerate or filter using jsonPath nodes. 
+
+### Example:
+
+```javascript
+var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
+   
+  	// Get all books
+  	var allBooks = rootJsonNode.jsonPath("$store.book[*]");
+  
+    for (var i = 0; i < allBooks.length; i++) {
+  		// Get book JavascriptJsonNode classes
+  		var book = allBooks[i];
+  		// Append String Json Node into book Object
+      	var published = book.appendBoolean();
+      	published.key = "isPublished";
+      	published.value = false
+	}
+}
+
+
