@@ -50,7 +50,7 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 | Syntax        | Example           | Description  | Result |
 | ------------- |-------------| -----|-----|
 | $     | $ | Reffers root element, must be included in all json path queries. | Will return root JSON Element, the whole tree |
-| .      | $.store      |   . path, use . to dive into subtrees | will return store object |
+| .      | $.store , $.['store']      |   . path, use . to dive into subtrees | will return store object |
 | * | $store.books[*]      | all elements in array | Will return all objects in books array |
 | [2] | $store.books[2] | array element index | will return 3rd object from books array, remember indexings starts from 0 element in arrays |
 | [(@.length-1)] | $store.books[(@length-1) ] | index condition, @length reffers to count of objects in array | will return last object in books array |
@@ -58,6 +58,6 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 | [0:10:2] | $.store.book[0:4:2] | sequence with step [startIndex:endIndex:step] | will return every second objects from books array from sequence starting at 0 ending at 4 index (will return objects with indexes 0 and 2) |
 | [?] | $.store.book[?] | randomly selected object in array | will return any single randomly selected object from books array |
 | [^] | $.store.book[^] | distinct items | JSONPath will traverse the array, compare and return every object that has different key structure than differ from the most common object key structure in array.|
-
+|[@.price<10] | array filter condition | return all objects in array with price element lower than 10 | Filter condition |
 
 
