@@ -76,7 +76,7 @@ Tree node function provides a way for your script to traverse complete JSON stru
 
 sjeTreeNode function provides you a way to enumerate or filter using jsonPath nodes. 
 
-### Example:
+*Example:*
 
 ```javascript
 var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
@@ -114,7 +114,7 @@ Recursive node function is executed on every single Json node in your current st
 | node | **JavascriptJsonNode** class | json node  |
 
 
-### Example:
+*Example:*
 
 ```javascript
 var sjeRecursiveNode = function (node) {
@@ -143,7 +143,7 @@ var sjeTreeNodeExport = function () {
 }
 ```
 
-*Example*
+*Example:*
 ```javascript
 // Return Array of SJEFile class objects
 var sjeTreeNodeExport = function () {
