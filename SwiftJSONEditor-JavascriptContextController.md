@@ -19,7 +19,7 @@ Example:
 ```javascript
 var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
    
-  	var filtered = rootJsonNode.jsonPath(jsonPath);
+  	var filtered = rootJsonNode.jsonPath("$.store.book[*].author");
   
     for (var i = 0; i < filtered.length; i++) {
   		var item = filtered[i];
