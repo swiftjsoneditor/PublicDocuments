@@ -1,3 +1,0 @@
-# Swift JSON Editor - JSON Path guide
-
-Swift JSON Editor uses JSON Path custom implemtation that is based on [http://goessner.net/articles/JsonPath/](http://goessner.net/articles/JsonPath/), current implementation support most of goessener syntax however extends it to offer more utiliti functions for Swift JSON Editor Scripted Server support.  
