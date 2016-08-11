@@ -50,13 +50,14 @@ JSON PATH can be used to extract structures from JSON tree wihout manually trave
 | Syntax        | Example           | Description  | Result |
 | ------------- |-------------| -----|-----|
 | $     | $ | Reffers root element, must be included in all json path queries. | Will return root JSON Element, the whole tree |
-| .      | $.store      |   . reffers to path, use . to dive into subtrees | will return store object |
-| * | $store.books[*]      |    reffers to all elements in array | Will return all objects in books array |
-| [2] | $store.books[2] | reffers to array element index | will return 3rd object from books array, remember indexings starts from 0 element in arrays |
+| .      | $.store      |   . path, use . to dive into subtrees | will return store object |
+| * | $store.books[*]      | all elements in array | Will return all objects in books array |
+| [2] | $store.books[2] | array element index | will return 3rd object from books array, remember indexings starts from 0 element in arrays |
 | [(@.length-1)] | $store.books[(@length-1) ] | index condition, @length reffers to count of objects in array | will return last object in books array |
-| [0:3] | $store.books[0:3] | reffers to sequence [startIndex:endIndex] | will return 4 objects in sequence from books array starting at 0 to 3 index (total of 4 objects) |
-| [0:10:2] | $.store.book[0:4:2] | reffers to [startIndex:endIndex:step] | will return every second objects from books array from sequence starting at 0 ending at 4 index (will return objects with indexes 0 and 2) |
+| [0:3] | $store.books[0:3] | sequence [startIndex:endIndex] | will return 4 objects in sequence from books array starting at 0 to 3 index (total of 4 objects) |
+| [0:10:2] | $.store.book[0:4:2] | sequence with step [startIndex:endIndex:step] | will return every second objects from books array from sequence starting at 0 ending at 4 index (will return objects with indexes 0 and 2) |
 | [?] | $.store.book[?] | randomly selected object in array | will return any single randomly selected object from books array |
+| [^] | $.store.book[^] | distinct items | JSONPath will traverse the array, compare and return every object that has different key structure than differ from the most common object key structure in array. | nothing as all objects in books array has exactly same key structure |
 
 
 
