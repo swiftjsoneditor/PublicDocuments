@@ -6,6 +6,7 @@ Swift JSON Editor implements custom JSONPath syntax to traverse JSON nodes in ap
 
 ![JsonPath](http://api.artproweb.com/sje/documentation/jsonPath-Dot.png "Json Path")
 ![JsonPath](http://api.artproweb.com/sje/documentation/jsonPath-Array.png "Json Path")
+![JsonPath](http://api.artproweb.com/sje/documentation/jsonPath-ArrayFilter.png "Json Path")
 
 The current syntax has been modified from [http://goessner.net/articles/JsonPath/](http://goessner.net/articles/JsonPath/) implementation porting it to Apple Swift and modified to support more application relevant functionality such **input/output javascript scripted server** within application (Will come in next application update).
 
