@@ -12,7 +12,7 @@ Use scripting to:
 - Gather information & export to external text files
 - Extract structures & create new project nodes with selected data
 
-JSON structure is simple tree structure, however when represented in Swift JSON Editor, JSON objects are translated to JavascriptJsonNode class objects. JavascriptJsonNode scripting class offers several methods and functionality and is represented in regular tree structure with parent / children relationship. **Inside scripting functions JavascriptJsonNode class is used insted of javascript JSON representation.**
+JSON structure is simple tree structure, however when represented in Swift JSON Editor, JSON objects are translated to JsonNode class objects. JsonNode scripting class offers several methods and functionality and is represented in regular tree structure with parent / children relationship. **Inside scripting functions JavascriptJsonNode class is used insted of javascript JSON representation.**
 
 ### All Scripting Classes
 
@@ -71,8 +71,8 @@ Tree node function provides a way for your script to traverse complete JSON stru
 
 | Parameter | Class | Description |
 |---|----|----|
-| rootJsonNode | **JavascriptJsonNode** class | root tree node of your project model |
-| selectedJsonNodes | **Array** of **JavascriptJsonNode** class objects  | currently selected JSON nodes in UI |
+| rootJsonNode | **JsonNode** class | root tree node of your project model |
+| selectedJsonNodes | **Array** of **JsonNode** class objects  | currently selected JSON nodes in UI |
 
 sjeTreeNode function provides you a way to enumerate or filter using jsonPath nodes. 
 
@@ -111,7 +111,7 @@ Recursive node function is executed on every single Json node in your current st
 
 | Parameter | Class | Description |
 |---|----|----|
-| node | **JavascriptJsonNode** class | json node  |
+| node | **JsonNode** class | json node  |
 
 
 *Example:*
