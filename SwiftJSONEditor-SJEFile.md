@@ -27,7 +27,7 @@ var sjeTreeNodeExport = function () {
 ## Functions
 | Function | Parameters | Returns | Description |
 | --- | --- | --- | --- |
-| **class function newFile() | none | newly created SJEFile object | creates new file object |
+| **class function newFile()** | none | newly created SJEFile object | creates new file object |
 
 > Remember !!! sjeTreeNodeExport function must return Array of SJEFile objects...
 
