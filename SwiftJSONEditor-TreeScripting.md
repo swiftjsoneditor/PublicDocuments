@@ -31,7 +31,7 @@ Default script:
 ```javascript
 /*  Swift JSON Editor - Json Tree Plugin */
 
-var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
+var sjeTreeNode = function (rootJsonNode, selectedJsonNodes, parameters) {
     
 }
 
@@ -43,7 +43,13 @@ var sjeRecursiveNode = function (node) {
 
 /*
 var sjeTreeNodeExport = function () {
-return NULL;
+	return NULL;
+}
+*/
+
+/*
+var sjeParameters = function () {
+	return NULL;
 }
 */
 
@@ -62,7 +68,7 @@ Comment sjeTreeNode if you want to execute sjeRecursiveNode function and vice ve
 # Tree Node Function
 
 ```javascript
-var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
+var sjeTreeNode = function (rootJsonNode, selectedJsonNodes, parameters) {
     
 }
 ```
@@ -79,7 +85,7 @@ sjeTreeNode function provides you a way to enumerate or filter using jsonPath no
 *Example:*
 
 ```javascript
-var sjeTreeNode = function (rootJsonNode, selectedJsonNodes) {
+var sjeTreeNode = function (rootJsonNode, selectedJsonNodes, parameters) {
    
   	// Get all books
   	var allBooks = rootJsonNode.jsonPath("$.store.book[*]");
@@ -102,7 +108,7 @@ Example script filter rootJsonNode using jsonPath function (implemented in Javas
 # Recursive Node Function
 
 ```javascript
- var sjeRecursiveNode = function (node) {
+ var sjeRecursiveNode = function (node,parameters) {
  
  }
 ```
@@ -117,7 +123,7 @@ Recursive node function is executed on every single Json node in your current st
 *Example:*
 
 ```javascript
-var sjeRecursiveNode = function (node) {
+var sjeRecursiveNode = function (node,parameters) {
  
    	var value = node.value;
   
@@ -138,7 +144,7 @@ Example script will search everywhere for "http://" string and replace it with "
 It is possible to gather information using tree or recursive functions and export gathered data to a file. Use sjeTreeNodeExport function to export information to disk. You can implement your own (Swift class file generators, JSON to XML ) etc.
 
 ```javascript
-var sjeTreeNodeExport = function () {
+var sjeTreeNodeExport = function (parameters) {
 
 }
 ```
@@ -162,5 +168,7 @@ var sjeTreeNodeExport = function () {
 |---|----|----|
 | none | none | Create new SJEFile class object, set fileName,fileExtension and contentString object |
 Return : Array of [SJEFile] objects
+
+# Parameters Function
 
 
