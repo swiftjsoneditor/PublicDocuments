@@ -94,8 +94,7 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes, parameters) {
   		// Get book JavascriptJsonNode classes
   		var book = allBooks[i];
   		// Append String Json Node into book Object
-      	var published = book.appendBoolean();
-      	published.key = "isPublished";
+      	var published = book.appendBoolean("isPublished");
       	published.value = parameters.published;
 	}
 }
