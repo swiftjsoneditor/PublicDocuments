@@ -18,25 +18,24 @@ JsonNode class representes single tree JSON entity in application.
 | **path** | String | get | absolute JSONPath string of JsonNode |
 | **relativePath** | String | get | relative JSONPath string of JsonNode, relative path will use * generic array index where possible. |
 
-(*a) key and structure modifications are disabled in Smart nodes. (cannot append, delete or modify key structure of smart objects)
 
 ## Functions
 | Function | Parameters | Returns | Description |
 | --- | --- | --- | --- |
 | **jsonPath("jsonPathString")** | [String (JSONPath string)](SwiftJSONEditor-JsonPath.md) | Array of JavascriptJsonNode class objects | Use to filter and return nodes using JSONPath querries |
-| **appendObject()** | none | newly created JsonNode class object | appends new Object node (*b) |
-| **appendArray()** | none | newly created JsonNode class object | appends new Array node (*b) |
-| **appendString()** | none | newly created JsonNode class object | appends new String node (*b) |
-| **appendNumber()** | none | newly created JsonNode class object | appends new Number node (*b) |
-| **appendBoolean()** | none | newly created JsonNode class object | appends new Boolean node (*b) |
-| **appendNull()** | none | newly created JsonNode class object | appends new Null node (*b) |
+| **appendObject(keyName)** | keyName:String (*a) | newly created JsonNode class object | appends new Object node (*b) |
+| **appendArray(keyName)** | keyName:String (*a)| newly created JsonNode class object | appends new Array node (*b) |
+| **appendString(keyName)** | keyName:String (*a)| newly created JsonNode class object | appends new String node (*b) |
+| **appendNumber(keyName)** | keyName:String (*a)| newly created JsonNode class object | appends new Number node (*b) |
+| **appendBoolean(keyName)** | keyName:String (*a)| newly created JsonNode class object | appends new Boolean node (*b) |
+| **appendNull(keyName)** | keyName:String (*a)| newly created JsonNode class object | appends new Null node (*b) |
 | **delete()** | none | none | deletes node (*c)|
 | **select()** | none | none | upon operation finishes, node will be selected in UI |
 | **debugInfo()** | none | key + value formatted string | prints basic information about node |
 
-(*b) appending new nodes is only allowed in container nodes (Object,Array), SmartNodes are not supported.
-(*c) deleting smart nodes is not allowed.
+(*a) you must specify a key for newly appended node in every instance even while appending to Arrays.
+(*b) appending new nodes is only allowed in container nodes (Object,SmartObject,Array,SmartArray)
 
 ##Smart Nodes
 
-Smart nodes offers most efficiency in user interface editing therefore editing is only supported via user interface. Smart Nodes were created to quickly edit and create JSON structures in interface.
+When inserting into smart nodes, new node will be appended into all shared instances this procedure is handled behind your javascript code. 
