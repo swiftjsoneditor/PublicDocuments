@@ -34,6 +34,7 @@ JsonNode class representes single tree JSON entity in application.
 | **debugInfo()** | none | key + value formatted string | prints basic information about node |
 
 (*a) you must specify a key for newly appended node in every instance even while appending to Arrays.
+
 (*b) appending new nodes is only allowed in container nodes (Object,SmartObject,Array,SmartArray)
 
 ##Smart Nodes
