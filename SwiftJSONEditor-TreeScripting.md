@@ -36,13 +36,13 @@ var sjeTreeNode = function (rootJsonNode, selectedJsonNodes, parameters) {
 }
 
 /*
-var sjeRecursiveNode = function (node) {
+var sjeRecursiveNode = function (node, parameters) {
  
 }
 */
 
 /*
-var sjeTreeNodeExport = function () {
+var sjeTreeNodeExport = function (parameters) {
 	return NULL;
 }
 */
@@ -108,7 +108,7 @@ Example script filter rootJsonNode using jsonPath function (implemented in Javas
 # Recursive Node Function
 
 ```javascript
- var sjeRecursiveNode = function (node,parameters) {
+ var sjeRecursiveNode = function (node, parameters) {
  
  }
 ```
@@ -123,7 +123,7 @@ Recursive node function is executed on every single Json node in your current st
 *Example:*
 
 ```javascript
-var sjeRecursiveNode = function (node,parameters) {
+var sjeRecursiveNode = function (node, parameters) {
  
    	var value = node.value;
   
@@ -170,5 +170,16 @@ var sjeTreeNodeExport = function () {
 Return : Array of [SJEFile] objects
 
 # Parameters Function
+
+Parametes function allows you to define a visual user interface parameters for your script. User interface parameters will be stored in project and user is allowed to mofify them. Parameters will be passed as javascript object into all previous functionality functions where you can take advantage of user input. 
+
+```javascript
+var sjeParameters = function () {
+    return [item0,item1,item2];
+}
+```
+
+Parameters are simple javascript object instances with pre defined structure of key:value
+All parameters has special keys:value pairs that you should follow:
 
 
