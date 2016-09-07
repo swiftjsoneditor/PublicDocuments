@@ -21,6 +21,7 @@ var sjeParameters = function () {
   // return array of objects
    return [parameter1,parameter2,...];
 }
+```
 
 ## Shared keys
 
@@ -32,3 +33,4 @@ Parameters are Javascript objects. All parameters have shared keys that define t
 | **displayName** | String |  parameter display name in user interface | displayName will be presented as parameter name in interface |
 | **description** | String | short informative description about parameter | description will be presented to user |
 | **type** | String | "String","Number","Map","Bool","Options" | type of user interface element |
+| **defaultValue** | String,Number,Object,Array | default value type depend on specific type of parameter | default value for parameter |
