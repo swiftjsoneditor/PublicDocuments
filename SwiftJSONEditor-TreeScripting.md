@@ -173,7 +173,7 @@ Return : Array of [SJEFile] objects
 Parametes function allows you to define a visual user interface parameters for your script. User interface parameters will be stored in project and user is allowed to mofify them. Parameters will be passed as javascript object into all previous functionality functions where you can take advantage of user input. 
 
 ```javascript
-var sjeParameters = function () {
+var sjeParameters = function (parameters) {
     return [item0,item1,item2];
 }
 ```
