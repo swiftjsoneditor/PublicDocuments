@@ -16,7 +16,7 @@ Remember to use Save and Execute button to:
 - Save your modified script text
 - Generate and cache values for all editor fields with associated plugin.
 
-###Smart Objects
+### Smart Objects
 
 Smart objects with value nodes will **share single instance of plugin**. You only use single editable instance on value nodes in Smart Object. Using value plugins in Smart Objects is the most preffered use for value plugins. 
 
