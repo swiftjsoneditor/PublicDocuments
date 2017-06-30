@@ -27,5 +27,32 @@ Remember :
 
 ## Basic Value Plugin
 
+Default script:
 
+```javascript
+var ValuePlugin = function () {
+    
+    // Required displayName
+    this.displayName = "Value Plugin User Script";
+    
+    // !!! Do not modify this identifier !!!
+    this.identifier = "com.swiftjsoneditor.valueplugin.user.520542116.079684";
+    
+    // Requiered function executeScript
+    // @param {String} inputValue - Value from editor or value generated from previous value plugin in queue.
+    // @param {String} jsonValue - Original stored value in json editor.
+    // @param {Number} arrayIndex - Index of this value node relative to first array container.
+    // @param {Object} parameters - Your defined parameters as object.
+    // @returns {String} - Override value for display or next value plugin.
+    this.executeScript = function (inputValue, jsonValue, arrayIndex, parameters) {
+        return inputValue
+    };
+}
+
+// Requiered global function
+function sjePluginClass() {
+    return new ValuePlugin();
+}
+
+```
 
