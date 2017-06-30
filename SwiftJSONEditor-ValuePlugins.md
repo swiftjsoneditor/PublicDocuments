@@ -27,6 +27,23 @@ Remember :
 
 ## Basic Value Plugin
 
+Quick script:
+```javascript
+var ValuePlugin = function () {
+    this.displayName = "Value Plugin Quick Script";
+    this.identifier = "com.swiftjsoneditor.valueplugin.user.<IDENTIFIER>";// !!! Do not modify !!!
+    this.executeScript = function (inputValue, jsonValue, arrayIndex, parameters) {
+        return inputValue;
+    };
+}
+
+function sjePluginClass() {
+    return new ValuePlugin();
+}
+  
+```
+
+
 Default script:
 
 ```javascript
@@ -35,8 +52,19 @@ var ValuePlugin = function () {
     // Required displayName
     this.displayName = "Value Plugin User Script";
     
-    // !!! Do not modify this identifier !!!
-    this.identifier = "com.swiftjsoneditor.valueplugin.user.520542116.079684";
+    // Required !!! Do not modify this identifier !!!
+    this.identifier = "com.swiftjsoneditor.valueplugin.user.<IDENTIFIER>";
+    
+    // Optional set to true for timestamp type of plugins
+    this.isCacheDisabled = false;
+    
+    // Optional set to true if you want to lock
+    this.isEditingDisabled = false;
+    
+    // Optional define UI input controls
+    this.parameters = function () {
+        return []
+    }
     
     // Requiered function executeScript
     // @param {String} inputValue - Value from editor or value generated from previous value plugin in queue.
@@ -53,6 +81,7 @@ var ValuePlugin = function () {
 function sjePluginClass() {
     return new ValuePlugin();
 }
+
 
 ```
 
