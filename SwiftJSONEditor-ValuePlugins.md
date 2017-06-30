@@ -85,3 +85,11 @@ function sjePluginClass() {
 
 ```
 
+| Parameter/function | Requiered | Type | Returns | Description |
+|----|----|----|----|----|
+| displayName | yes | String | none | Plugin display name. Will be presented in UI|
+| identifier | yes | String | none | Automatically generated unique plugin identifier. This cannot be modified.|
+| executeScript | yes | function | String | Main transform/generate function. Use transform logic and return String/Number/Boolean/Null representation back to editor.|
+
+
+
