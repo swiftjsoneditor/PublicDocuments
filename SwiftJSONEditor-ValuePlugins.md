@@ -92,5 +92,22 @@ function sjePluginClass() {
 | **executeScript** | yes | function | String | Main transform/generate function. Use transform logic and return String/Number/Boolean/Null representation back to editor.|
 | isCacheDisabled | no | Boolean | none | Set to true if your plugin cannot cache values such timestamp generator. If you set to true, editor will process the plugin script on every display, webserver request etc.|
 | isEditingDisabled | no | Boolean | none | Set to true you do not want to edit anymore the plugin in UI.|
+| parameters | no | Function | Array of Objects | Define your Interface parameters.|
+
+## Main Function (executeScript)
+
+Execute script function is a main transform function. The parameters are pased from Swift JSON Editor and you are able to transform the value using simple javascript.
+
+### inputValue
+
+Input value is a parameter value passed from Swift JSON Editor as a main value to use for transform operations. This value is a **result of previous value plugin output or output directly of the value from outline** if this is a first value plugin. You should use this value as it is the input for transforming operations.
+
+### jsonValue
+
+Json value is a parameter value that is representation of the inputted Json value in editor. This value represent the original value that actually exists and is passed unmodified to every value plugin in a row. 
+
+### arrayIndex
+
+Array index position of the first parent Array container. Use this value as a base for randomization or iteration. 
 
 
