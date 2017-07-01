@@ -87,9 +87,9 @@ function sjePluginClass() {
 
 | Parameter/function | Requiered | Type | Returns | Description |
 |----|----|----|----|----|
-| displayName | yes | String | none | Plugin display name. Will be presented in UI|
-| identifier | yes | String | none | Automatically generated unique plugin identifier. This cannot be modified.|
-| executeScript | yes | function | String | Main transform/generate function. Use transform logic and return String/Number/Boolean/Null representation back to editor.|
+| **displayName** | yes | String | none | Plugin display name. Will be presented in UI|
+| **identifier** | yes | String | none | Automatically generated unique plugin identifier. This cannot be modified.|
+| **executeScript** | yes | function | String | Main transform/generate function. Use transform logic and return String/Number/Boolean/Null representation back to editor.|
 | isCacheDisabled | no | Boolean | none | Set to true if your plugin cannot cache values such timestamp generator. If you set to true, editor will process the plugin script on every display, webserver request etc.|
 | isEditingDisabled | no | Boolean | none | Set to true you do not want to edit anymore the plugin in UI.|
 
