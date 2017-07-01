@@ -116,4 +116,6 @@ Json value is a parameter value that is representation of the inputted Json valu
 
 Array index position of the first parent Array container. Use this value as a base for randomization or iteration. 
 
+### parameters
 
+If you define UI parameters, this parameter will contain Object of all parameter values defined by user. Read more about constructing the UI elements and usage in separate section here...
