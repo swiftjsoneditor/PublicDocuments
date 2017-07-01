@@ -96,6 +96,12 @@ function sjePluginClass() {
 
 ## Main Function (executeScript)
 
+``` javascript
+this.executeScript = function (inputValue, jsonValue, arrayIndex, parameters) {
+    return inputValue
+};
+```
+
 Execute script function is a main transform function. The parameters are pased from Swift JSON Editor and you are able to transform the value using simple javascript.
 
 ### inputValue
